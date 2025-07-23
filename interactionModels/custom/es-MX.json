@@ -1,0 +1,83 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "slots": [],
+          "name": "CurrentTimeIntent",
+          "samples": [
+            "hola mundo",
+            "Dime el tiempo",
+            "Que Hora es",
+            "Dime la hora",
+            "como estás"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "slots": [
+            {
+              "name": "tipo_entrenamiento",
+              "type": "TIPO_ENTRENAMIENTO"
+            }
+          ],
+          "name": "SeleccionarEntrenamientoIntent",
+          "samples": [
+            "pon música para {tipo_entrenamiento}",
+            "reproduce playlist de {tipo_entrenamiento}",
+            "entrenamiento {tipo_entrenamiento}",
+            "Reproduce  {tipo_entrenamiento}"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "calentamiento"
+              }
+            },
+            {
+              "name": {
+                "value": "cardio"
+              }
+            },
+            {
+              "name": {
+                "value": "yoga"
+              }
+            },
+            {
+              "name": {
+                "value": "funcional"
+              }
+            },
+            {
+              "name": {
+                "value": "crossfit"
+              }
+            }
+          ],
+          "name": "TIPO_ENTRENAMIENTO"
+        }
+      ],
+      "invocationName": "as sa"
+    }
+  }
+}
